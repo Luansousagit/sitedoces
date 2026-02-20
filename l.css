@@ -1,0 +1,26 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'sans-serif'; }
+body { background: #fdf8f8; color: #333; }
+
+/* Navbar */
+header { background: #fff; padding: 15px 5%; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: bold; color: #ff6b81; }
+.logo span { color: #333; }
+#inputBusca { padding: 8px; border-radius: 20px; border: 1px solid #ddd; width: 250px; }
+
+/* Cards */
+.container { padding: 40px 5%; }
+.grid-receitas { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.05); transition: 0.3s; }
+.card:hover { transform: translateY(-5px); }
+.card-img { height: 180px; background-size: cover; background-position: center; }
+.card-body { padding: 15px; }
+.categoria { font-size: 0.75rem; font-weight: bold; color: #ff6b81; text-transform: uppercase; }
+.tag-vegan { color: #2e7d32 !important; background: #e8f5e9; padding: 2px 6px; border-radius: 4px; }
+.read-more { display: block; margin-top: 10px; color: #ff6b81; text-decoration: none; font-weight: bold; }
+
+/* Estilo para página de receita */
+.receita-imagem { width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; }
+.lista-ingredientes, .lista-preparo { list-style: none; margin: 20px 0; }
+.lista-ingredientes li, .lista-preparo li { padding: 10px; border-bottom: 1px solid #eee; }
+.completed { text-decoration: line-through; color: #aaa; opacity: 0.6; }

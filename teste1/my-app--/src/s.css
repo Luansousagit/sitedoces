@@ -1,0 +1,12 @@
+.paragraf_ol {
+    color: #cc4444;
+}
+
+const paragrafo = document.getElementById("paragrafo_mx");
+const h3_titulo = document.getElementById("titulo_h3");
+
+paragrafo.innerText = "novo testo mudado pelo js"
+
+function mudar_textto_titulo(){
+    h3_titulo.innerHTML = 'Titulo mudado no click do botão.'
+}
